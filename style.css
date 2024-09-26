@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top, rgba(9, 78, 189, 0.5), transparent);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+#app {
+    background: white;
+    width: 60%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#app h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: rgb(9, 78, 189);
+    border-bottom: 2px solid #094ebd;
+    padding-bottom: 20px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    margin-bottom: 10px;
+    color: #001e4d;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn {
+    background: white;
+    color: #222;
+    font-weight: 500;
+    border: 1px solid #222;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: white;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    flex-direction: row;
+}
+
+#timer {
+    font-size: 20px;
+}
+
+#next-btn {
+    display: none;
+    font-size: 20px;
+    margin: 10px auto;
+    background: #001e4d;
+    color: white;
+    border: 0;
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right;
+    margin-right: 5px;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
