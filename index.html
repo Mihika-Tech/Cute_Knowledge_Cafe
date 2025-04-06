@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Application</title>
+    <title>🌸 Cute Knowledge Café 🍰</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <h1>Web Quiz</h1>
-        <div class="quiz">
-            <h2 id="question">Question</h2>
-            <div id="answer-buttons">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-            </div>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">🍰 Cute Knowledge Café 🧁</h1>
+            <div class="progress-flower" id="progress"></div>
         </div>
-        <div class="cont">
-            <div id="timer">Time Left: <span id="time">5:00</span></div>
-            <button id="next-btn">Next</button>
+
+        <div class="question-card" id="questionCard">
+            <h2 class="question-text" id="questionText"></h2>
+            <div class="options" id="optionsContainer"></div>
+        </div>
+
+        <div class="score-bunny">
+            <div id="feedback" class="emoji-feedback"></div>
+            <p>Score: <span id="scoreValue">0</span> 🍪</p>
+            <button class="restart-btn" id="restartBtn" style="display: none;">
+                🌀 Play Again!
+            </button>
         </div>
     </div>
 
